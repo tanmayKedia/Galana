@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.badjatya.ledger">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.GalanaActivity"
+            android:label="Galana"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.GirviActivity" android:label="Girvi">
+        </activity>
+
+        <activity android:name=".activities.AddGirviTransactionActivity" android:label="Add Girvi Transaction"
+            android:windowSoftInputMode="stateHidden"
+            >
+        </activity>
+
+        <activity android:name=".activities.ViewGirviTransactionActivity" android:label="Details">
+        </activity>
+
+
+        <activity android:name=".activities.AddTransactionActivity" android:label="Add Transaction"
+            android:windowSoftInputMode="stateHidden"
+            >
+        </activity>
+
+        <activity android:name=".activities.SearchAndAdd" android:label="Select"
+
+            >
+        </activity>
+
+        <activity android:name=".activities.FilterActivity" android:label="Select Filters"
+            >
+        </activity>
+
+        <activity android:name=".Rakam.RakamList.RakamActivity" android:label="Khata Udhar"
+            >
+        </activity>
+
+        <activity android:name=".Rakam.AddRakam.AddRakamActivity" android:label="Add Transaction"
+            android:windowSoftInputMode="stateHidden"
+            >
+        </activity>
+
+        <activity android:name=".Rakam.ViewRakam.ViewRakamTransaction" android:label="Khata Udhar"
+
+            >
+        </activity>
+    </application>
+
+</manifest>

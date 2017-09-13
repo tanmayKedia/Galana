@@ -1,0 +1,26 @@
+private void loadRakamTransaction(String uuid)
+    {
+        RakamTransactionCursorWrapper gcw= insertAndQueryDb.queryRakamTransactionTable(DatabaseSchema.RakamTransactionTable.Cols.UUID+"=?",new String[]{uuid});
+        try
+        {
+            gcw.moveToFirst();
+            rakamTransaction=gcw.getRakamTransaction();
+        }
+        finally {
+            gcw.close();
+        }
+        dateAns.setText(TimeConverter.convertEpochToDateString(rakamTransaction.getDate()));
+        nameAns.setText(rakamTransaction.getName());
+        fatherNameAns.setText(rakamTransaction.getFatherName());
+        villageAns.setText(rakamTransaction.getVillage());
+        casteAns.setText(rakamTransaction.getCaste());
+        phoneAns.setText(rakamTransaction.getPhoneNumber());
+        metalTypeAns.setText(MetalType.getTypeFromIndex(rakamTransaction.getMetalType()));
+        itemNameAns.setText(rakamTransaction.getItemName());
+        weightAns.setText(new Double(rakamTransaction.getWeight()).toString());
+        tunchAns.setText(new Double(rakamTransaction.getTunch()) + "%");
+        interestRateAns.setText(InterestRates.getRateFormIndex(rakamTransaction.getInterestPercentage()));
+        metalRateAns.setText(new Double(rakamTransaction.getMetalPrice()).toString());
+        valuCalcAns.setText(new Double(rakamTransaction.getCalcValue()).toString());
+        amountLoaned.setText(new Double(rakamTransaction.getMoneyGiven()).toString());
+    }

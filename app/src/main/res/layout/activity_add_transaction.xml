@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/add_new_transaction_date"
+        android:text="Date"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/add_new_transaction_date_ans"
+        android:layout_below="@id/add_new_transaction_date"
+        android:hint="Select Date"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_stroke"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="8dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/add_new_transaction_amount"
+        android:layout_below="@id/add_new_transaction_date_ans"
+        android:text="Amount"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/add_new_transaction_amount_ans"
+        android:layout_below="@id/add_new_transaction_amount"
+        android:hint="Enter Amount"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_stroke"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="8dp"
+        android:textSize="20sp"
+        android:cursorVisible="false"
+        android:inputType="numberDecimal"
+        android:textColor="#000"
+        />
+    <CheckBox
+        android:id="@+id/add_new_transaction_naya_udhar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Naya Udhar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:layout_below="@id/add_new_transaction_amount_ans"
+        />
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/add_new_transaction_add_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:text="Add Transaction"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_button_selector"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>

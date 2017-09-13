@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ledger</string>
+    <string name="drawer_open">Drawer opened</string>
+    <string name="drawer_closed">Drawer closed</string>
+</resources>

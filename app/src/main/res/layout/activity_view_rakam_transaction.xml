@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/view_detail_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        >
+        <TextView
+            android:id="@+id/view_melted_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MELTED!"
+            android:textColor="#fff"
+            android:textSize="36sp"
+            android:visibility="visible"
+            />
+        <ScrollView
+            android:id="@+id/view_rakam_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_rakam_date"
+                    android:text="Date:"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_date_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/view_rakam_date"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_rakam_name"
+                    android:text="Name:"
+                    android:layout_below="@id/view_rakam_date"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_name_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/view_rakam_name"
+                    android:layout_below="@id/view_rakam_date"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_fathers_name"
+                    android:layout_below="@id/view_rakam_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father's Name:"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_fathers_name_ans"
+                    android:layout_toRightOf="@id/view_rakam_fathers_name"
+                    android:layout_below="@id/view_rakam_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_village_name"
+                    android:layout_below="@id/view_rakam_fathers_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Village:"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_village_name_ans"
+                    android:layout_toRightOf="@id/view_rakam_village_name"
+                    android:layout_below="@id/view_rakam_fathers_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_caste"
+                    android:layout_below="@id/view_rakam_village_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caste:"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_caste_ans"
+                    android:layout_below="@id/view_rakam_village_name"
+                    android:layout_toRightOf="@id/view_rakam_caste"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_phone"
+                    android:layout_below="@id/view_rakam_caste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No.:"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_phone_ans"
+                    android:layout_below="@id/view_rakam_caste_ans"
+                    android:layout_toRightOf="@id/view_rakam_phone"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                
+
+                <TextView
+                    android:id="@+id/view_rakam_item_name"
+                    android:layout_below="@id/view_rakam_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name:"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_item_name_ans"
+                    android:layout_below="@id/view_rakam_phone"
+                    android:layout_toRightOf="@id/view_rakam_item_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+                <TextView
+                    android:id="@+id/view_rakam_item_interest"
+                    android:layout_below="@id/view_rakam_item_name"
+                    android:text="Interest:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_item_interest_ans"
+                    android:layout_below="@id/view_rakam_item_name"
+                    android:layout_toRightOf="@id/view_rakam_item_interest"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/view_rakam_value_calc"
+                    android:layout_below="@id/view_rakam_item_interest"
+                    android:text="Value:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_value_calc_ans"
+                    android:layout_below="@id/view_rakam_item_interest"
+                    android:layout_toRightOf="@id/view_rakam_value_calc"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_item_money_loaned"
+                    android:layout_below="@id/view_rakam_value_calc"
+                    android:text="Money Loaned:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/view_rakam_item_money_loaned_ans"
+                    android:layout_below="@id/view_rakam_value_calc"
+                    android:layout_toRightOf="@id/view_rakam_item_money_loaned"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="8dp"
+                    />
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/view_rakam_transaction_banner"
+        android:layout_below="@+id/view_detail_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:translationZ="4dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transactions"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+    <ScrollView
+        android:id="@+id/view_rakam_transaction_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_rakam_transaction_banner"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_rakam_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                >
+            </android.support.v7.widget.RecyclerView>
+            <Button
+                android:id="@+id/view_rakam_add_entry_button"
+                android:layout_below="@id/view_rakam_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Add Entry"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_button_selector"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/view_rakam_add_settle_button"
+                android:layout_below="@id/view_rakam_add_entry_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Settle"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_button_selector"
+                android:layout_marginBottom="16dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

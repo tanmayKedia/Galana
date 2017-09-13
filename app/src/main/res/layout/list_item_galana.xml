@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    >
+
+    <ImageButton
+        android:id="@+id/galana_list_item_call_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_call_black_24dp"
+        android:background="#00000000"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/galana_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="left"
+        android:textColor="#000000"
+        android:text="Mohan Pyare"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_alignParentLeft="true"
+        android:gravity="start"
+        />
+
+    <TextView
+        android:id="@+id/galana_list_item_fathers_name"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="left"
+        android:gravity="start"
+        android:text="Duggu Pyare"
+        android:layout_below="@id/galana_list_item_name"
+        android:maxLines="1"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/galana_list_item_call_button"
+        />
+
+
+    <TextView
+        android:id="@+id/galana_list_item_current_by_owed"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:text="Current|Owed"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@id/galana_list_item_fathers_name"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/galana_list_item_village_name"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="left"
+        android:gravity="start"
+        android:text="Champaner"
+        android:layout_below="@id/galana_list_item_fathers_name"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/galana_list_item_current_by_owed"
+        android:singleLine="true"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/galana_list_item_village_name"
+        ></FrameLayout>
+</RelativeLayout>
